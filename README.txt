@@ -20,3 +20,4 @@ IMPORTANT:
 This is a front-end student project. Attraction opening hours, fees and access information are deliberately marked for confirmation because they can change and must be checked with the attraction or relevant authority before being described as verified. Map buttons open Google Maps search/directions.
 
 Images load from Unsplash and Google Fonts load from Google Fonts, so those visual resources require an internet connection. The itinerary is saved in the visitor's browser using localStorage; it is not synced across devices.
+Nigeria Explore website deployment test.
