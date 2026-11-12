@@ -214,3 +214,65 @@ h1 em, h2 em { font-style: normal; color: #8ed9ff; }
   .dialog-image { height: 170px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *:before, *:after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+
+/* CLEAN DESIGN UPDATE — solid surfaces, no liquid-glass effects */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e4edf3;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.main-nav .nav-itinerary {
+  border-radius: 5px;
+  background: #f0f7fc;
+}
+.hero-glass {
+  background: #073f68;
+  border: 1px solid #2d719b;
+  border-radius: 6px;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.glass-icon {
+  background: #0d659d;
+  border-radius: 5px;
+}
+.experience-card {
+  background: #086ca9;
+  border: 1px solid #4b9ac7;
+  border-radius: 6px;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.experience-card:hover { background: #075b91; }
+.photo-caption {
+  background: #073f68;
+  border: 1px solid #ffffff55;
+  border-radius: 5px;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.itinerary-list-wrap {
+  background: #07558b;
+  border: 1px solid #4b91b8;
+  border-radius: 6px;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.main-nav { backdrop-filter: none; -webkit-backdrop-filter: none; }
+.main-nav.open { background: #ffffff; }
+.place-dialog::backdrop { backdrop-filter: none; }
+
+/* More restrained, consistent card styling */
+.destination-card {
+  border-radius: 6px;
+  box-shadow: 0 3px 14px rgba(16, 44, 67, .07);
+}
+.destination-card:hover {
+  box-shadow: 0 8px 22px rgba(16, 44, 67, .12);
+}
+.card-state, .card-save { border-radius: 4px; }
+.search-box { border-radius: 5px; }
+.filter-chip { border-radius: 5px; }
+.button { border-radius: 5px; }
