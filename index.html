@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover remarkable places, culture and experiences across Nigeria with Nigeria Explore.">
+  <meta name="theme-color" content="#087fce">
+  <title>Nigeria Explore | Discover Nigeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    YOUR GUIDE TO DISCOVERING NIGERIA
+    <span class="announcement-note">Seven states. Countless stories.</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Nigeria Explore home">
+      <span class="brand-mark">N<span>e</span></span>
+      <span class="brand-name">NIGERIA <b>EXPLORE</b><small>DISCOVER MORE. GO FURTHER.</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="active" href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#experiences">Categories</a>
+      <a href="#about">About</a>
+      <a class="nav-itinerary" href="#itinerary">My itinerary <span id="navCount">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Scenic Nigerian landscape"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="eyebrow light"><span></span> THE BEAUTY OF NIGERIA, CLOSER THAN EVER</div>
+        <h1>Find your next<br><em>great escape.</em></h1>
+        <p>From the hills of Nasarawa to the coast of Lagos, discover places that make Nigeria unforgettable.</p>
+        <div class="hero-actions">
+          <a class="button button-white" href="#destinations">Explore destinations <span>↗</span></a>
+          <a class="text-link light-link" href="#about">Discover our story <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-glass">
+        <div class="glass-icon">⌖</div>
+        <div><strong>Start close. Explore far.</strong><small>Your journey across Nigeria begins here.</small></div>
+      </div>
+      <div class="hero-index"><b>01</b><span>/</span> 07 STATES FEATURED</div>
+    </section>
+
+    <section class="intro section-wrap" id="about">
+      <div class="intro-label">A COUNTRY OF DISCOVERY</div>
+      <div class="intro-copy">
+        <h2>There is more to<br>Nigeria than you <em>know.</em></h2>
+        <p>Nigeria Explore is a local tourism information portal created to help visitors discover attractions, learn about places and plan trips with useful visitor information.</p>
+      </div>
+      <div class="intro-stat"><strong>07</strong><span>STATES TO EXPLORE<br>AND MORE TO COME</span></div>
+    </section>
+
+    <section class="destinations section-wrap" id="destinations">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span></span> PICK A PLACE, MAKE A MEMORY</div>
+          <h2>Explore <em>destinations.</em></h2>
+        </div>
+        <p>Discover selected attractions across seven Nigerian states, with Nasarawa taking the lead.</p>
+      </div>
+
+      <div class="filter-bar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search places or states..." aria-label="Search destinations"></label>
+        <div class="filter-buttons" id="stateFilters">
+          <button class="filter-chip selected" data-state="All">All states</button>
+          <button class="filter-chip" data-state="Nasarawa">Nasarawa</button>
+          <button class="filter-chip" data-state="Plateau">Plateau</button>
+          <button class="filter-chip" data-state="Lagos">Lagos</button>
+          <button class="filter-chip" data-state="Cross River">Cross River</button>
+          <button class="filter-chip" data-state="Kano">Kano</button>
+          <button class="filter-chip" data-state="Ogun">Ogun</button>
+          <button class="filter-chip" data-state="Kaduna">Kaduna</button>
+        </div>
+      </div>
+
+      <div class="destination-grid" id="destinationGrid" aria-live="polite"></div>
+      <p class="no-results" id="noResults" hidden>No destinations match your search. Try another place or state.</p>
+      <div class="center-action"><button class="button button-outline" id="showAllBtn">Explore all destinations <span>→</span></button></div>
+    </section>
+
+    <section class="experience-section" id="experiences">
+      <div class="section-wrap experience-inner">
+        <div class="eyebrow light"><span></span> FIND YOUR KIND OF ADVENTURE</div>
+        <div class="section-heading experience-heading">
+          <h2>Travel by <em>experience.</em></h2>
+          <p>Whether you love nature, history or culture, find a destination that speaks to you.</p>
+        </div>
+        <div class="experience-grid">
+          <button class="experience-card" data-category="Nature"><span class="experience-symbol">⌁</span><b>Nature & outdoors</b><small>Waterfalls, hills and landscapes</small><span class="experience-arrow">↗</span></button>
+          <button class="experience-card" data-category="History"><span class="experience-symbol">◈</span><b>History & heritage</b><small>Stories, monuments and museums</small><span class="experience-arrow">↗</span></button>
+          <button class="experience-card" data-category="Culture"><span class="experience-symbol">✳</span><b>Culture & creativity</b><small>Art, tradition and local life</small><span class="experience-arrow">↗</span></button>
+          <button class="experience-card" data-category="Leisure"><span class="experience-symbol">☼</span><b>Leisure & recreation</b><small>Relaxation and family outings</small><span class="experience-arrow">↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="nasarawa-feature section-wrap">
+      <div class="nasarawa-photo">
+        <div class="photo-caption"><span>OUR FEATURED STATE</span><b>NASARAWA</b></div>
+      </div>
+      <div class="nasarawa-copy">
+        <div class="eyebrow"><span></span> THE HOME OF OUR FIRST JOURNEY</div>
+        <h2>Begin with<br><em>Nasarawa State.</em></h2>
+        <p>Known for its natural landscapes, hills and waterfalls, Nasarawa is our featured destination. Explore its attractions and learn what to check before you visit.</p>
+        <a class="button button-blue" href="#destinations" id="nasarawaLink">Discover Nasarawa <span>↗</span></a>
+        <div class="feature-note">Visitor details are being compiled. Confirm access, opening times and fees with attraction managers before travelling.</div>
+      </div>
+    </section>
+
+    <section class="itinerary-section section-wrap" id="itinerary">
+      <div class="itinerary-panel">
+        <div>
+          <div class="eyebrow light"><span></span> YOUR TRIP, YOUR WAY</div>
+          <h2>Build your own<br><em>little adventure.</em></h2>
+          <p>Save places that interest you and create a simple list for your next trip. Your itinerary stays on this device.</p>
+          <a class="button button-white" href="#destinations">Choose destinations <span>→</span></a>
+        </div>
+        <div class="itinerary-list-wrap">
+          <div class="itinerary-list-head"><b>MY SAVED PLACES</b><span id="itineraryCount">0 PLACES</span></div>
+          <div id="itineraryList" class="itinerary-list"><div class="empty-itinerary">Your itinerary is empty.<br><small>Add a destination to get started.</small></div></div>
+          <button class="clear-itinerary" id="clearItinerary" hidden>Clear itinerary</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="visitor-note section-wrap">
+      <div class="visitor-icon">i</div>
+      <div><b>Travel information matters.</b><p>Opening hours, admission fees and access arrangements can change. This portal distinguishes information that has been verified from details visitors should confirm directly.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark">N<span>e</span></span><span class="brand-name">NIGERIA <b>EXPLORE</b><small>DISCOVER MORE. GO FURTHER.</small></span></a>
+      <p>Discover Nigeria.<br>Experience its beauty.</p>
+      <a class="back-top" href="#home">BACK TO TOP ↑</a>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Nigeria Explore. Student tourism information project.</span><span>MADE TO INSPIRE DISCOVERY · NIGERIA</span></div>
+  </footer>
+
+  <dialog class="place-dialog" id="placeDialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close details">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+</body>
+</html>
